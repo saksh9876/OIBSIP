@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+    nav a:hover {
+        color: #00adb5;
+    }
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .hero button {
+        padding: 12px 25px;
+        border: none;
+        background: white;
+        color: #333;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .hero button:hover {
+            background: #222;
+            color: white;
+        }
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #00adb5;
+    color: white;
+}
+
+    .cta button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        background: white;
+        color: #333;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
