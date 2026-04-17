@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 60px;
+    gap: 20px;
+}
+
+/* Left */
+.left h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.left p {
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.left button {
+    background: orange;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Center Image */
+
+
+/* Right Cards */
+.right .card {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.right .card:hover {
+    transform: translateY(-10px);
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+    text-align: center;
+}
+
+.stats h2 {
+    font-size: 35px;
+    color: orange;
+}
+
+/* Services */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.service {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.service.active {
+    background: orange;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
